@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+h1 {
+  color: #28a745;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.score {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.hands {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.hand {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.hand h2 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #28a745;
+}
+
+.card {
+  width: 50px;
+  height: 75px;
+  background-color: white;
+  border: 2px solid #28a745;
+  border-radius: 10px;
+  margin: 0 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #28a745;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: deal-card 0.5s ease-out;
+}
+
+@keyframes deal-card {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#message {
+  font-size: 1.5em;
+  color: #dc3545;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .container {
+      margin: 20px auto;
+      padding: 15px;
+  }
+
+  button {
+      padding: 8px 16px;
+      font-size: 0.9em;
+  }
+
+  #message {
+      font-size: 1.2em;
+  }
+}
