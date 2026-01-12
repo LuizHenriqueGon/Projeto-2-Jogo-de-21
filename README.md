@@ -19,6 +19,13 @@
   <img src="https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge" alt="Status Concluído">
 </div>
 
+<p align="center">
+  <a href="https://youtu.be/PDbbPGsqqpY" title="Clique para assistir à demonstração">
+    <img src="https://img.shields.io/badge/Assista%20à%20Demonstração-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Assista à Demonstração">
+  </a>
+</p>
+
+
 <hr>
 
 ## 🎲 Sobre o Projeto
